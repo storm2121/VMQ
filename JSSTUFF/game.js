@@ -70,6 +70,7 @@ let fetcher2 = "questions.json";
                 questions = questions.concat(loadedQuestions);
                 console.log("1 equals 1"); 
             }          
+            
             startGame();
         })
         .catch( err =>{
@@ -197,9 +198,13 @@ suggestions.addEventListener('click', useSuggestion);
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
+    //console.log(currentQuestion);
+   // console.log("HELLO THERE ASHODUIDSAHUIOHUIDSA");
+
     //question.innerText = currentQuestion.question;
     //audior.src= songs[questionIndex];
-    document.getElementById("songSelector").setAttribute('src', currentQuestion.question);
+    const arisaka = "/MEDIA/";
+    document.getElementById("songSelector").setAttribute('src', arisaka + currentQuestion.question);
 
     document.getElementById("mashiro").load();
 
