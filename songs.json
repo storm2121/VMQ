@@ -1,0 +1,27 @@
+[
+    {
+        
+        "question": "01. one of a kind.mp3",
+        "choice1": "one of a kind",
+        "choice2": "01. one of a kind.mp3",
+        "choice3": "<232>",
+        "choice4": "<325245>",
+        "answer": "one of a kind"
+    },
+    {
+        "question": "14. two of a kind.mp3",
+        "choice1": "<script href='xxx.js'>",
+        "choice2": "two of a kind",
+        "choice3": "<script src='xxx.js'>",
+        "choice4": "<script file='xxx.js'>",
+        "answer": "two of a kind"
+    },
+    {
+        "question": "17. Way to Fly - 蒼の彼方へ.mp3",
+        "choice1": "msgBox('Hello World');",
+        "choice2": "alertBox('Hello World');",
+        "choice3": "way to fly",
+        "choice4": "alert('Hello World');",
+        "answer": "way to fly"
+    }
+]
