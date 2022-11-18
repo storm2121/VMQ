@@ -44,19 +44,53 @@
 #hud{
     display: flex;
     justify-content: space-between;
-
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 44.5rem;
+    padding-top: 12rem;
 }
 
 
-.hud-prefix{
-    text-align: center;
+.hud-prefix1{
     font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 48.5rem;
+    padding-top: 9rem;
+    color: white;
+}
+.hud-prefix{
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 16.5rem;
+    padding-right: 16.5rem;
+    padding-top: 9rem;
+    color: white;
+
 }
 
 .hud-main-text{
 
-    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 16.5rem;
 }
+.hud-main-text1{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 16.5rem;
+    padding-top: 28rem;
+}
+
+
 
 #progressBar{
 
@@ -81,6 +115,13 @@
     height: 12rem;
     animation: spin 2s linear infinite;
 }
+.udon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 727px;
+  }
+
 
 @keyframes spin{
     0%{
@@ -91,3 +132,4 @@
         transform: rotate(360deg);
     }
 }
+

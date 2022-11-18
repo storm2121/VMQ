@@ -13,6 +13,7 @@ var checkBox = document.getElementById("myCheck");
 var checkBox1 = document.getElementById("myCheck1");
 var checkBox2 = document.getElementById("myCheck2");
 const cb = document.querySelector('#myCheck');
+document.getElementById('udonMashiro').style.display = 'none';
 //const audior = document.getElementById("songSelector");
 //audior.src= randomSong;
 
@@ -230,6 +231,7 @@ suggestions.addEventListener('click', useSuggestion);
        
     }, 1000);
 
+
     
 
 
@@ -242,12 +244,24 @@ suggestions.addEventListener('click', useSuggestion);
     
     if(classToApply == 'correct'){
         incrementScore(CORRECT_BONUS);
+        document.getElementById("ramen").style.backgroundColor="green";
+        document.getElementById('ramen').style.opacity = "0.5";
     }
-        
+
+    else{
+        document.getElementById("ramen").style.backgroundColor="red";
+    document.getElementById('ramen').style.opacity = "0.5";
+    incrementScore(0);
+    }
+    document.getElementById('udonMashiro').style.display = 'inline';
+
     document.getElementById('fruit').value = '';
             setTimeout(() => {
+                 document.getElementById('udonMashiro').style.display = 'none';
+                 document.getElementById("ramen").removeAttribute("style");
+
                 getNewQuestion();
-            }, 3000);
+            }, 9000);
            
 
     }, 11000);

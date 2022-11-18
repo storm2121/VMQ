@@ -153,10 +153,12 @@ input::placeholder{
   
   .search-container {
     width: 400px;
-    position: relative;
+    text-align:center;
+    position: fixed;
     margin: 15px auto;
     background: rgba(255, 255, 255, 0.2);
-
+    bottom: 120px;
+    left: 727px;
   }
   .search-container input,
   .search-container .suggestions {
@@ -165,7 +167,6 @@ input::placeholder{
     text-align: center;
     font-size: 1.8rem;
     color: white;
-    
   }
   .search-container input {
     background: rgba(255, 255, 255, 0.2);
@@ -175,7 +176,6 @@ input::placeholder{
   .search-container .suggestions {
     position: absolute;
     top: 60px;
-   
   }
   
   ul {

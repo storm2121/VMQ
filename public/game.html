@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/CSSONLY/game.css" />
 
 </head>
-<body>
+<body style="overflow:hidden;">
    
    
 
@@ -21,9 +21,7 @@
         <div id="game" class="justify-center flex-column hidden">
             <div id="hud"> 
                 <div id="hud-item">
-                    <p id = "progressText" class="hud-prefix">
-                        Question
-                    </p>
+                    
                     <div id="progressBar"> 
                         <div id="progressBarFull">
 
@@ -31,24 +29,33 @@
                     </div>
                     
                 </div>
-                <div id="hud-item">
-                    <p class="hud-prefix">
-                    Score
-                    </p>
-                    <h1 class="hud-main-text" id="score">
-                        0
-                    </h1>
-                    <h1 class="hud-main-text" id="timer" >
-                        10
-                    </h1>
+              
+                <div> 
+
                 </div>
             </div>
-            
+            <div id="hud-item">
+                <p id = "progressText" class="hud-prefix1">
+                    Question
+                </p>
+                <p class="hud-prefix">
+                Score
+                </p>
+                <h1 class="hud-main-text" id="score">
+                    0
+                </h1>
+                <h1 class="hud-main-text1" id="timer" >
+                    10
+                </h1>
+                
+                <img id="udonMashiro" class="udon" src="https://i.pinimg.com/originals/ea/e1/0c/eae10c7cb166ebf078d50e568229a412.jpg" alt="Cover" width="640" height="360" >
+
+            </div>
             <h2 id="question">
                 
             </h2>
 
-            <div class="search-container">
+            <div id="ramen" class="search-container">
                 <input type="text" name="fruit" id="fruit" placeholder="Search song">
                 <div class="suggestions">
                     <ul></ul>
